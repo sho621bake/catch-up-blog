@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import ModeSwitch from './ModeSwitch'
 
 const Header = () => {
     return (
@@ -22,6 +23,9 @@ const Header = () => {
                         </a>
                     </Link>
                 </h1>
+                <div className='flex items-center text-base leading-5'>
+                    <ModeSwitch />
+                </div>
             </header>
         </section>
     )
