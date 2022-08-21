@@ -1,6 +1,6 @@
-import Footer from 'components/Footer'
-import Header from 'components/Header'
-import Article from 'components/Article'
+import Footer from 'src/components/Footer'
+import Header from 'src/components/Header'
+import Article from 'src/components/Article'
 import { client } from 'libs/client'
 
 const Home = (props: any) => {
