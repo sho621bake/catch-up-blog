@@ -1,4 +1,4 @@
-import type { Articles } from '../types/article'
+import type { Articles } from 'types/article'
 
 type Props = {
     articles: Articles[]

@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import siteMetadata from '../data/siteMetadata'
+import siteMetadata from 'data/siteMetadata'
 
 const Document = () => {
     return (

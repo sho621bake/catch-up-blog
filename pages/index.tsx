@@ -1,7 +1,7 @@
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import Article from '../components/Article'
-import { client } from '../libs/client'
+import Footer from 'components/Footer'
+import Header from 'components/Header'
+import Article from 'components/Article'
+import { client } from 'libs/client'
 
 const Home = (props: any) => {
     // console.log(props.articles)

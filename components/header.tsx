@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
 import ModeSwitch from './ModeSwitch'
-import siteMetadata from '../data/siteMetadata'
+import siteMetadata from 'data/siteMetadata'
 
 const Header = () => {
     return (

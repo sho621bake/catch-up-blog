@@ -1,8 +1,8 @@
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
-import HomeBtn from '../../components/HomeBtn'
-import type { Articles } from '../../types/article'
-import { client } from '../../libs/client'
+import Header from 'components/Header'
+import Footer from 'components/Footer'
+import HomeBtn from 'components/HomeBtn'
+import type { Articles } from 'types/article'
+import { client } from 'libs/client'
 
 type Props = {
     article: Articles
