@@ -15,6 +15,10 @@ const Header = () => {
                     content='width=device-width, initial-scale=1.0'
                 />
                 <meta name='description' content={siteMetadata.description} />
+                <meta
+                    name='google-site-verification'
+                    content='hisAj4iidNkvgkFuU0mQIG5h32nG3gR73cDC9hr7ZoU'
+                />
                 <title>{siteMetadata.title}</title>
             </Head>
             <div className='flex items-center'>
