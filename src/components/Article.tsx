@@ -1,4 +1,5 @@
 import type { Articles } from 'types/article'
+import Image from 'next/image'
 
 type Props = {
     articles: Articles[]
@@ -15,13 +16,14 @@ const Article = ({ articles }: Props) => {
                                 <h2 className='card-title'>{article.title}</h2>
                             </div>
                             <div className='block'>
-                                <div style={{ width: 300, height: 300 }}>
-                                    <img
+                                <div style={{ width: 300, height: 200 }}>
+                                    <Image
                                         src={article.eyecatch.url}
                                         alt='content-eye-catch'
                                         width={300}
-                                        height={300}
+                                        height={200}
                                         loading='eager'
+                                        layout='responsive'
                                     />
                                 </div>
                             </div>
