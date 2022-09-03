@@ -3,13 +3,12 @@ module.exports = {
     purge: ['./src/**/*.{ts,tsx}'],
     mode: 'jit',
     content: [
-        './pages/**/*.{js,ts,jsx,tsx}',
-        './components/**/*.{js,ts,jsx,tsx}',
+        'src/pages/**/*.{js,ts,jsx,tsx}',
+        'src/components/**/*.{js,ts,jsx,tsx}',
     ],
     theme: {
         extend: {},
     },
-    darkMode: 'class',
     plugins: [require('daisyui')],
     daisyui: {
         styled: true,
