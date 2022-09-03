@@ -1,4 +1,4 @@
-/** @type {import('next-sitemap').Config} */
+/** @type {import('next-sitemap').IConfig} */
 module.exports = {
     siteUrl: 'https://catch-up-blog.vercel.app/',
     generateRobotsTxt: true,
