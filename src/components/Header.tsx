@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
 import ModeSwitch from './ModeSwitch'
@@ -22,13 +21,12 @@ const Header = () => {
                 <title>{siteMetadata.title}</title>
             </Head>
             <div className='flex items-center'>
-                <Image
+                <img
                     src={siteMetadata.siteLogo}
                     alt='logo icon'
                     loading='eager'
                     width={35}
                     height={35}
-                    priority
                 />
                 <Link href='/' aria-label={siteMetadata.headerTitle}>
                     <a className='ml-3'>
