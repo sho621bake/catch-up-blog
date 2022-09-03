@@ -1,28 +1,29 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export && next-sitemap --config sitemap.config.js",
-    "start": "next start"
-  },
-  "dependencies": {
-    "daisyui": "^2.24.0",
-    "next": "latest",
-    "next-themes": "^0.2.0",
-    "react": "18.1.0",
-    "react-dom": "18.1.0"
-  },
-  "devDependencies": {
-    "@types/node": "17.0.35",
-    "@types/react": "18.0.9",
-    "@types/react-dom": "18.0.5",
-    "autoprefixer": "^10.4.7",
-    "microcms-js-sdk": "^2.2.1",
-    "next-sitemap": "^3.1.21",
-    "postcss": "^8.4.14",
-    "prettier": "^2.7.1",
-    "prettier-plugin-tailwindcss": "^0.1.13",
-    "tailwindcss": "^3.1.2",
-    "typescript": "4.7.2"
-  }
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build && next export",
+        "postbuild": "next-sitemap --config sitemap.config.js",
+        "start": "next start"
+    },
+    "dependencies": {
+        "daisyui": "^2.24.0",
+        "next": "latest",
+        "next-themes": "^0.2.0",
+        "react": "18.1.0",
+        "react-dom": "18.1.0"
+    },
+    "devDependencies": {
+        "@types/node": "17.0.35",
+        "@types/react": "18.0.9",
+        "@types/react-dom": "18.0.5",
+        "autoprefixer": "^10.4.7",
+        "microcms-js-sdk": "^2.2.1",
+        "next-sitemap": "^3.1.21",
+        "postcss": "^8.4.14",
+        "prettier": "^2.7.1",
+        "prettier-plugin-tailwindcss": "^0.1.13",
+        "tailwindcss": "^3.1.2",
+        "typescript": "4.7.2"
+    }
 }
