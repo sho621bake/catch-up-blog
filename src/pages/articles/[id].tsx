@@ -10,6 +10,7 @@ type Props = {
 
 const ArticleId: React.FC = ({ article }: Props) => {
     const publish_date = new Date(article.publishedAt)
+    console.log(publish_date.getMonth())
     return (
         <>
             <div className='mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0'>
@@ -22,16 +23,20 @@ const ArticleId: React.FC = ({ article }: Props) => {
                                     {article.title}
                                 </h1>
                             </div>
-                            <span className='mt-0 flex text-gray-600'>
+                            <span className='mt-0 flex'>
                                 <p className='mr-2'>投稿日:</p>
-                                {`${publish_date.getFullYear()}-${publish_date.getMonth()}-${publish_date.getDate()}`}
+                                {`${publish_date.getFullYear()}-${
+                                    publish_date.getMonth() + 1
+                                }-${publish_date.getDate()}`}
                             </span>
                         </div>
-                        <div
-                            dangerouslySetInnerHTML={{
-                                __html: `${article.content}`,
-                            }}
-                        />
+                        <article className='prose'>
+                            <div
+                                dangerouslySetInnerHTML={{
+                                    __html: `${article.content}`,
+                                }}
+                            />
+                        </article>
                         <div className='mt-10 text-center'>
                             <HomeBtn />
                         </div>
