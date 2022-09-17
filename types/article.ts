@@ -9,5 +9,7 @@ export type Articles = {
     eyecatch: {
         url: string
     }
-    category: string | null
+    category: {
+        name: string | null
+    }
 }
