@@ -2,10 +2,10 @@ const siteMetadata = {
     title: "Catch Up's ",
     headerTitle: "Catch Up's",
     description:
-        'プログラミング言語やフレームワークなどのリリース情報や技術情報をアップしてくブログサイトです。',
+        "CatchUp'sはプログラミング言語やフレームワークなどのリリース情報や技術情報を配信するブログサイトです。",
     language: 'ja',
     charset: 'UTF-8',
-    siteUrl: '',
+    siteUrl: 'catch-up-blog-vercel.app',
     siteLogo: '/image/logo.png',
     analytics: {
         // If you want to use an analytics provider you have to add it to the
