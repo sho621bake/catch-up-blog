@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import siteMetadata from 'data/siteMetadata'
+import { existGaId, GA_ID } from 'libs/gtag'
 
 const Document = () => {
     return (
@@ -22,7 +23,7 @@ const Document = () => {
                     sizes='16x16'
                     href='/image/favicons/favicon-16x16.png'
                 />
-                <link rel='manifest' href='/site.webmanifest' />
+                <link rel='manifest' href='/image/favicons/site.webmanifest' />
                 <link
                     rel='mask-icon'
                     href='/image/favicons/safari-pinned-tab.svg'
@@ -30,6 +31,26 @@ const Document = () => {
                 />
                 <meta name='msapplication-TileColor' content='#00aba9' />
                 <meta name='theme-color' content='#ffffff' />
+                {/* Google Analytics */}
+                {existGaId && (
+                    <>
+                        <script
+                            async
+                            src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+                        />
+                        <script
+                            dangerouslySetInnerHTML={{
+                                __html: `
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('js', new Date());
+                                gtag('config', '${GA_ID}', {
+                                page_path: window.location.pathname,
+                                });`,
+                            }}
+                        />
+                    </>
+                )}
             </Head>
             <body>
                 <Main />
