@@ -1,9 +1,6 @@
 import Link from 'next/link'
-type Category = {
-    category: string
-}
 
-const Breadcrumbs = ({ category }: Category) => {
+const Breadcrumbs = ({ category }: string) => {
     return (
         <div className='breadcrumbs text-sm'>
             <ul>
